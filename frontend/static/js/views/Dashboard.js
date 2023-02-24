@@ -3,18 +3,76 @@ import AbstractView from "./AbstractView.js";
 export default class extends AbstractView {
     constructor(params) {
         super(params);
-        this.setTitle("Dashboard");
+        this.setTitle("CV - Genady Kogan");
     }
 
     async getHtml() {
+        let div_ele = document.getElementById("divele")
         return `
-            <h1>Welcome back, Dom</h1>
-            <p>
-                Fugiat voluptate et nisi Lorem cillum anim sit do eiusmod occaecat irure do. Reprehenderit anim fugiat sint exercitation consequat. Sit anim laborum sit amet Lorem adipisicing ullamco duis. Anim in do magna ea pariatur et.
-            </p>
-            <p>
-                <a href="/posts" data-link>View recent posts</a>.
-            </p>
+        <body>
+        <header>
+          <img src="profile-picture.jpg" alt="Profile Picture">
+          <h1>John Doe</h1>
+          <p>Web Developer</p>
+          <p>Email: john.doe@gmail.com</p>
+          <p>Phone: +1 (555) 123-4567</p>
+        </header>
+        
+        <main>
+          <section>
+            <h2>Summary</h2>
+            <p>A highly skilled web developer with 5+ years of experience creating responsive and user-friendly websites. Strong background in HTML, CSS, JavaScript, and React. Excellent communication and collaboration skills with a passion for solving complex problems and delivering exceptional results.</p>
+          </section>
+          
+          <section>
+            <h2>Skills</h2>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Bootstrap</li>
+              <li>Git</li>
+              <li>Agile development</li>
+            </ul>
+          </section>
+          
+          <section>
+            <h2>Experience</h2>
+            <ul>
+              <li>
+                <h3>Web Developer - ABC Company</h3>
+                <p><em>June 2018 - Present</em></p>
+                <ul>
+                  <li>Develop and maintain company website using React, HTML, and CSS.</li>
+                  <li>Collaborate with cross-functional teams to deliver high-quality and timely projects.</li>
+                  <li>Optimize website for search engine ranking and user experience.</li>
+                </ul>
+              </li>
+              <li>
+                <h3>Junior Web Developer - XYZ Agency</h3>
+                <p><em>January 2016 - May 2018</em></p>
+                <ul>
+                  <li>Assist senior developers in creating and updating client websites using HTML, CSS, and JavaScript.</li>
+                  <li>Contribute to team meetings and brainstorming sessions to develop creative solutions.</li>
+                  <li>Develop and maintain internal tools using React and Node.js.</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          
+          <section>
+            <h2>Education</h2>
+            <ul>
+              <li>
+                <h3>Bachelor of Science in Computer Science - University of ABC</h3>
+                <p><em>Graduated May 2015</em></p>
+              </li>
+            </ul>
+          </section>
+        </main>
+      </body>
+            
         `;
     }
 }
