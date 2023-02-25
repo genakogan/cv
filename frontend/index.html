@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single Page App</title>
-    <link rel="stylesheet" href="/static/css/index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./static/css/index.css">
+  </head>
+  <body>
     <nav class="nav">
-        <a href="/" class="nav__link" data-link>Personal Details</a>
-        <a href="/education_view" class="nav__link" data-link>Education</a>
-        <a href="/projects_view" class="nav__link" data-link>Projects</a>
+      <a href="./static/html/views/personal_details.html" class="nav__link" data-link>Personal Details</a>
+      <a href="/personal_details" class="nav__link" data-link>Education</a>
+      <a href="/projects_view" class="nav__link" data-link>Projects</a>
     </nav>
-    <div id="app"></div>
-    <script type="module" src="/static/js/index.js"></script>
-</body>
+    <div id="app">
+      <!-- Content will be dynamically rendered here -->
+    </div>
+    <script>
+      const links = document.querySelectorAll('a[data-link]');
+
+      links.forEach(link => {
+        link.addEventListener('click', event => {
+          event.preventDefault();
+
+          const href = link.getAttribute('href');
+
+          // Navigate to the new HTML file
+          window.location.href = href;
+        });
+      });
+    </script>
+  </body>
 </html>
