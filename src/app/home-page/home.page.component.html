@@ -9,7 +9,24 @@
           <li><a href="views/personal_details.html">Personal Details</a></li>
           <li><a href="views/education.html">Education</a></li>
           <li><a href="views/projects.html">Projects</a></li>
+        </ul><div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="active"><a href="/">Home</a></li>
+          <li role="presentation"><a href="/education">Education</a></li>
+          <li role="presentation"><a href="personal-details/">Personal details</a></li>
         </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <router-outlet></router-outlet>
+      </div>
+    </div>
+   
+  </div>
+  
     </nav>
     <div class="body-text"><h1>Home page</h1></div>
   </body>
