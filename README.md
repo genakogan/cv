@@ -28,3 +28,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ng build --output-path docs --base-href Gena-Kogan
+
+## Dart mode
+https://github.com/thisiszoaib/angular-dark-mode
