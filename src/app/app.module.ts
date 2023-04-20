@@ -27,7 +27,7 @@ const appRoutes: Routes =[
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes),
+    [RouterModule.forRoot(appRoutes, { useHash: true })]
     
   ],
   exports: [RouterModule],
