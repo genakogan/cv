@@ -6,11 +6,14 @@ import { HomePageComponent } from './home-page/home.page.component';
 import { PersonalDetailsComponent } from './personal-details/personal.details.component';
 import { Routes, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 const appRoutes: Routes =[
   {path: '', component: HomePageComponent},
   {path: 'education', component: EducationComponent},
-  {path: 'personal-details', component: PersonalDetailsComponent}
+  {path: 'personal-details', component: PersonalDetailsComponent},
+  { path: 'not-found', component: ErrorPageComponent, data: {message: 'Page not found!'} },
+  { path: '**', redirectTo: '/not-found' }
 ];
 
 @NgModule({
@@ -19,6 +22,7 @@ const appRoutes: Routes =[
     HomePageComponent,
     PersonalDetailsComponent,
     EducationComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
