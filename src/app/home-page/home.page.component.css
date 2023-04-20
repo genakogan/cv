@@ -36,7 +36,7 @@ a {
     color: #009579;
 } */
 
-*{
+/* *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -91,5 +91,5 @@ nav {
 
 .nav-links li a.active{
     background-color: #4caf50;
-}
+} */
 
