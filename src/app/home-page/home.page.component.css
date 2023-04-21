@@ -1,70 +1,84 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+}
 
-  header {
-    display: flex;
-    justify-content: flex-end ;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    margin-top: 20px;
-  }
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+}
 
-  header a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 10px;
-  }
+#gitHubLinkedIn  {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
 
-  header a:hover {
-    text-decoration: underline;
-  }
+/* header a:hover {
+  text-decoration: underline;
+}
+ */
+#gitHubLinkedIn:hover {
+  text-decoration: underline;
+}
 
-  article {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    margin-top: 20px;
-  }
 
-  h4 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: blue;
-  }
+article {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-top: 20px;
+}
 
-  h6 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-  }
+h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: blue;
+}
 
-  p {
-    margin: 0;
-    line-height: 1.5;
-    text-align: justify;
-    text-justify: inter-word;
-  }
+h6 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
 
-  ul {
-    margin-top: 0;
-    margin-bottom: 10px;
-    padding-left: 20px;
-  }
+p,
+li {
+  text-align: justify;
+  text-justify: inter-word;
+}
 
-  li {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-align: justify;
-    text-justify: inter-word;
-  }
-  a {
-    font-size: 18px;
-    font-style: italic;
-  }
+p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+a {
+  font-size: 18px;
+  font-style: italic;
+}
+
+aside {
+  background-color: #f2f2f2;
+  padding-left: 15px;
+  margin-left: 15px;
+}
