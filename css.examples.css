@@ -1,0 +1,27 @@
+/*=============Pseudo-elements example=========*/
+/* h4::after{
+ content: "Top";
+ background-color: aqua;
+ font-size: 16px;
+ font-weight: bold;
+ display: inline-block;
+ padding: 5px 10px;
+ position: absolute;
+ top:-10px;
+ right: 0;
+} */
+
+/*================================*/
+/*=============Pseudo-classes example=========*/
+/* li:first-child{
+  font-weight: bold;
+}
+
+li :last-child{
+  font-style: italic;
+}
+
+li :nth-child(odd){
+  color: red;
+} */
+/*================================*/

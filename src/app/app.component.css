@@ -1,4 +1,60 @@
-.container {
-    margin-top: 30px;
-  }
+/* .container {
+  margin-top: 30px;
+
+}
+
+.nav-tabs a {
+  color: red;
+}
+ */
+
+
+ /****************************/
+ /*Navigation*/
+/****************************/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Inter", sans-serif;
+}
+
+.main-nav-list{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  justify-content: flex-end;
   
+}
+
+.main-nav-link:link,
+.main-nav-link:visited{
+  display: inline-block;
+  text-decoration: none;
+  color: blue;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active{
+  color: rgb(11, 158, 11);
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 0.5rem 3.2rem;
+  border-radius: 9px;
+  color: rgb(187, 121, 23);
+  background-color: aqua;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color:blanchedalmond;
+
+}

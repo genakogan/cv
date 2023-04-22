@@ -1,9 +1,8 @@
-body {
+/* body {
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
-  margin: 0;
 }
-
+ */
 header {
   display: flex;
   justify-content: flex-end;
@@ -15,10 +14,11 @@ header {
 }
 
 #gitHubLinkedIn  {
-  color: #fff;
+  color: aqua;
   text-decoration: none;
   margin-right: 10px;
 }
+
 
 /* header a:hover {
   text-decoration: underline;
@@ -26,11 +26,12 @@ header {
  */
 #gitHubLinkedIn:hover {
   text-decoration: underline;
+  color: rgb(22, 179, 1);
 }
 
 
 article {
-  max-width: 800px;
+ 
   margin: 0 auto;
   padding: 20px;
   background-color: #fff;
@@ -43,6 +44,7 @@ h4 {
   margin-top: 20px;
   margin-bottom: 10px;
   color: blue;
+  position: relative;
 }
 
 h6 {
@@ -59,6 +61,8 @@ li {
 p {
   margin: 0;
   line-height: 1.5;
+  margin-bottom: 5px;
+  
 }
 
 ul {
@@ -73,6 +77,7 @@ li {
 }
 
 a {
+
   font-size: 18px;
   font-style: italic;
 }
@@ -82,3 +87,31 @@ aside {
   padding-left: 15px;
   margin-left: 15px;
 }
+
+/*=============Pseudo-elements example=========*/
+/* h4::after{
+ content: "Top";
+ background-color: aqua;
+ font-size: 16px;
+ font-weight: bold;
+ display: inline-block;
+ padding: 5px 10px;
+ position: absolute;
+ top:-10px;
+ right: 0;
+} */
+
+/*================================*/
+/*=============Pseudo-classes example=========*/
+/* li:first-child{
+  font-weight: bold;
+}
+
+li :last-child{
+  font-style: italic;
+}
+
+li :nth-child(odd){
+  color: red;
+} */
+/*================================*/

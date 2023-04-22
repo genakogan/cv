@@ -31,3 +31,15 @@ ng build --output-path docs --base-href Gena-Kogan
 
 ## Dart mode
 https://github.com/thisiszoaib/angular-dark-mode
+
+## HTML <aside> style Attribute
+https://www.dofactory.com/html/editor/aside-style
+
+
+## HTML validator 
+https://www.google.com/search?q=validator+w3+org&rlz=1C1YTUH_enIL1043IL1043&oq=valisator+w3%2C&aqs=chrome.1.69i57j0i13i512l4j0i22i30l4j0i15i22i30.8720j1j7&sourceid=chrome&ie=UTF-8
+
+## Fonts
+ Google Fonts (SANS-SERFI - Inter, Open Sans, Roboto, Montserrat, Works Sans, Lato; SERFI - Merriwather, Aleo, Playfair Display, Cormorant, Carbo, Lora). For more inforamation go to jonas.io. 
+ https://fonts.google.com/
+ https://typescale.com/
