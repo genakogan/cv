@@ -1,117 +1,114 @@
-/* body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+
+/*
+--- 01 COLORS
+-Primary: #0b7285
+-Tints: #c5f6fa
+
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
- */
-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  margin-top: 20px;
+html{
+    font-size: 65.5%;
 }
 
-#gitHubLinkedIn  {
-  color: aqua;
-  text-decoration: none;
-  margin-right: 10px;
+body{
+    font-family: "Rubik", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
 }
 
-
-/* header a:hover {
-  text-decoration: underline;
-}
- */
-#gitHubLinkedIn:hover {
-  text-decoration: underline;
-  color: rgb(22, 179, 1);
+.section-hero{
+    background-color:#c5f6fa;
+    padding: 4.8rem 0 9.6rem 0;
 }
 
 
-article {
- 
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  margin-top: 20px;
+.hero{
+    
+    max-width: 130rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
 }
 
-h4 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  color: blue;
-  position: relative;
+.heading-primary{
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.05;
+    color: #333;
+    letter-spacing: -0.5px;
+    margin-bottom: 3.2rem;
 }
 
-h6 {
-  margin-top: 10px;
-  margin-bottom: 5px;
+.hero-description{
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+    /* margin-right: 7rem; */
+    text-align: justify;
+
 }
 
-p,
-li {
-  text-align: justify;
-  text-justify: inter-word;
+.btn:link, .btn:visited{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1.6rem 3.2rem;
+    border-radius: 150px;
+    transition: background-color 0.3s;
 }
 
-p {
-  margin: 0;
-  line-height: 1.5;
-  margin-bottom: 5px;
+.btn--full:link, .btn--full:visited{
+    background-color: #0b7285;
+}
+
+.btn--full:hover, .btn--full:active{
+    background-color: #08505d;
+    /* border: 3px solid #fff; */
+    box-shadow: inset 0 0 0 5px #fff;
+}
+
+
+.hero-img{
+    width: 60%;
+}
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7rem;
+    margin-top: 3rem;
+  }
   
-}
+  .technologies-imgs {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .technologies-imgs a {
+    margin: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .technologies-imgs a:hover {
+    transform: scale(1.1);
+  }
+  
 
-ul {
-  margin-top: 0;
-  margin-bottom: 10px;
-  padding-left: 20px;
-}
+  .section-how{
+    padding: 9.rem 0;
+    background-color: red;
+  }
+  
 
-li {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-a {
-
-  font-size: 18px;
-  font-style: italic;
-}
-
-aside {
-  background-color: #f2f2f2;
-  padding-left: 15px;
-  margin-left: 15px;
-}
-
-/*=============Pseudo-elements example=========*/
-/* h4::after{
- content: "Top";
- background-color: aqua;
- font-size: 16px;
- font-weight: bold;
- display: inline-block;
- padding: 5px 10px;
- position: absolute;
- top:-10px;
- right: 0;
-} */
-
-/*================================*/
-/*=============Pseudo-classes example=========*/
-/* li:first-child{
-  font-weight: bold;
-}
-
-li :last-child{
-  font-style: italic;
-}
-
-li :nth-child(odd){
-  color: red;
-} */
-/*================================*/

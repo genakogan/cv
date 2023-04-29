@@ -1,95 +1,117 @@
-/* body {
-    --nav-width: 200px;
-    margin: 0 0 0 var(--nav-width);
-    font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
-}
-
-.nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: var(--nav-width);
-    height: 100vh;
-    background: #222222;
-}
-
-.nav__link {
-    display: block;
-    padding: 12px 18px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+   
+  header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  #gitHubLinkedIn  {
+    color: aqua;
     text-decoration: none;
-    color: #eeeeee;
-    font-weight: 500;
-}
-
-.nav__link:hover {
-    background: rgba(255, 255, 255, 0.05);
-}
-
-#app {
-    margin: 2em;
+    margin-right: 10px;
+  }
+  
+  
+  /* header a:hover {
+    text-decoration: underline;
+  }
+   */
+  #gitHubLinkedIn:hover {
+    text-decoration: underline;
+    color: rgb(22, 179, 1);
+  }
+  
+  
+  article {
+   
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: blue;
+    position: relative;
+  }
+  
+  h6 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  p,
+  li {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  
+  p {
+    margin: 0;
     line-height: 1.5;
-    font-weight: 500;
-}
-
-a {
-    color: #009579;
-} */
-
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-.body_text{
-    display: flex;
-    font-family: "Montserrat", sans-serif;
-    align-items: center;
-    justify-content: center;
-    margin-top: 250px ;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    background-color: teal;
-    font-family: "Montserrat", sans-serif;
-}
-
-.nav-links {
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
-}
-
-.nav-links li {
-    list-style: none;
-}
-
-.heading {
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 30px;
-}
-
-.nav-links{
-    color: white;
-    text-decoration: none;
-    letter-spacing: 3px;
+    margin-bottom: 5px;
+    
+  }
+  
+  ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  a {
+  
+    font-size: 18px;
+    font-style: italic;
+  }
+  
+  aside {
+    background-color: #f2f2f2;
+    padding-left: 15px;
+    margin-left: 15px;
+  }
+  
+  /*=============Pseudo-elements example=========*/
+  /* h4::after{
+   content: "Top";
+   background-color: aqua;
+   font-size: 16px;
+   font-weight: bold;
+   display: inline-block;
+   padding: 5px 10px;
+   position: absolute;
+   top:-10px;
+   right: 0;
+  } */
+  
+  /*================================*/
+  /*=============Pseudo-classes example=========*/
+  /* li:first-child{
     font-weight: bold;
-    font-size: 14px;
-    padding: 14px 16px;
-}
-
-.nav-links li a:hover:not(a.active){
-    background-color: red;
-}
-
-.nav-links li a.active{
-    background-color: #4caf50;
-}
-
+  }
+  
+  li :last-child{
+    font-style: italic;
+  }
+  
+  li :nth-child(odd){
+    color: red;
+  } */
+  /*================================*/

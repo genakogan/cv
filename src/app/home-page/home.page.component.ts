@@ -8,9 +8,6 @@ import { Router } from "@angular/router";
 
 })
 export class HomePageComponent{
-    constructor(private router: Router){}
-    onLoadServers(){
-        this.router.navigate(['/personal-details'])
-    }
+   
 
 }

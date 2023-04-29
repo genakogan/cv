@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+--- 01 COLORS
+-Primary: #0b7285
+-Tints: #c5f6fa
+*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: block;
+    margin-right: 0px;
+    margin-bottom: 0px;
+   
+    background-color: #c5f6fa;
+  }
+  

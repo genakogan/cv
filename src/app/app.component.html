@@ -37,7 +37,7 @@
 
 <body>
 
-  <nav class="main-nav">
+  <!-- <nav class="main-nav">
 
     <ul class="main-nav-list">
       <li><a class="main-nav-link nav-cta" routerLink="/">Home</a></li>
@@ -47,12 +47,24 @@
 
   </nav>
 
-
   <div class="row">
     <div class="col-xs-12 col-sm-9 col-md-10 col-sm-offset-1 col-md-offset-1">
       <router-outlet></router-outlet>
     </div>
-  </div>
+  </div> -->
+  <header class="header">
+    <h1 class="logo">G. K.</h1>
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li><a class="main-nav-link nav-cta" routerLink="/">Home</a></li>
+        <li><a class="main-nav-link nav-cta" routerLink="personal-details/">Personal details</a></li>
+        <li><a class="main-nav-link nav-cta" routerLink="/education">Education</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
 </body>
 
 </html>
