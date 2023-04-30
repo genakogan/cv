@@ -21,6 +21,30 @@ body {
     margin-right: 0px;
     margin-bottom: 0px;
    
-    background-color: #c5f6fa;
+    /* background-color: #c5f6fa; */
   }
+
   
+  /***************************/
+  
+.section-how{
+    padding: 9.6rem 0;
+    background-color: bisque;
+}
+
+.section-how:nth-child(1){
+    
+    background-color: bisque;
+}
+
+.section-how:nth-child(2){
+    
+    background-color: rgb(212, 138, 48);
+}
+
+.section-how:nth-child(4){
+    
+    background-color: rgb(212, 48, 103);
+}
+
+
