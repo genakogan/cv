@@ -63,6 +63,8 @@ body{
     padding: 1.6rem 3.2rem;
     border-radius: 150px;
     transition: background-color 0.3s;
+    
+    
 }
 
 .btn--full:link, .btn--full:visited{
