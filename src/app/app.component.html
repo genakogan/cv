@@ -21,23 +21,34 @@
 
 </div> -->
 
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carlito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 888888888888888888888888 -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Carlito:wght@700&display=swap" rel="stylesheet">
-  <title>Document</title>
-</head>
 
-<body class="main-container">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- <nav class="main-nav">
+    <!-- 888888888888888888888888 -->
+    <title>Document</title>
+  </head>
+
+  <body class="main-container">
+    <!-- <nav class="main-nav">
 
     <ul class="main-nav-list">
       <li><a class="main-nav-link nav-cta" routerLink="/">Home</a></li>
@@ -52,36 +63,68 @@
       <router-outlet></router-outlet>
     </div>
   </div> -->
-  <header class="header">
-    <h1 class="logo">G. K.</h1>
-    <nav class="main-nav">
-      <ul class="main-nav-list">
-        <li><a class="main-nav-link nav-cta" routerLink="/">Home</a></li>
-        <li><a class="main-nav-link nav-cta" routerLink="personal-details/">Personal details</a></li>
-        <li><a class="main-nav-link nav-cta" routerLink="/education">Education</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <router-outlet></router-outlet>
-  </main>
+    <header class="header">
+      <h1 class="logo">G. K.</h1>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link nav-cta" routerLink="/">Home</a></li>
+          <li>
+            <a class="main-nav-link nav-cta" routerLink="personal-details/"
+              >Personal details</a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link nav-cta" routerLink="/education"
+              >Education</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
 
-  <footer class="footer">
-    <div class="container grid grid--3-cols">
-      <div class="logo-col">
-        G. K.
+    <!--     <section class="section-how ">
+      <div class="container grid grid--2-cols">
+        <div>Test 1</div>
+        <div>Test 1</div>
+        <div>Test 1</div>
+        <div>Test 1</div>
       </div>
-      <div class="nav-col">
-        Nav1
-      </div>
-      <div class="nav-col">
-        Nav1
-      </div>
-      <div class="nav-col">
-        Nav1
-      </div>
-    </div>
-  </footer>
-</body>
+    </section>
 
+    <section class="section-how grid grid--4-cols">
+      <div>Test 1</div>
+      <div>Test 1</div>
+      <div>Test 1</div>
+      <div>Test 1</div>
+    </section> -->
+
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <div class="row">
+          <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+
+        <div class="row">
+          INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By:
+          Mahesh
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
