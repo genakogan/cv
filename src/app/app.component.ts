@@ -11,7 +11,11 @@ export class AppComponent {
   // Sticky navigation
   ngAfterViewInit() {
     const sectionMainHeroEl = this.elRef.nativeElement.querySelector(".main-hero")
-    const obs = new IntersectionObserver(function(){},{});
+    const obs = new IntersectionObserver(function(){},{
+      // In the viewport
+      root: null,
+      threshold: 0
+    });
     obs.observe(sectionMainHeroEl);
     
     
