@@ -46,12 +46,23 @@ Paragraph default: 1.6
 #ef6b73
 */
 
-
+/* 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+ */
 
+html,
+body {
+  padding: 0;
+  margin: 0;
 
-
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  height: 100%;
+}
