@@ -1,9 +1,0 @@
-/* rem and em do not depens on html font-size in mesia queries!  
-Instead, 1rem = 1em = 16px
-rem is root font size and em is a current font size
-*/
-
-@media (max-width: 66em) {
-    
-    
-}

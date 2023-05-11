@@ -1,0 +1,127 @@
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+<!-- <div class="container">
+  
+  <header>
+      <nav>
+    <ul class="nav nav-tabs">
+      <li role="presentation" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a
+          routerLink="/">Home</a></li>
+      <li role="presentation" routerLinkActive="active"><a routerLink="personal-details/">Personal details</a></li>
+      <li role="presentation" routerLinkActive="active"><a routerLink="/education">Education</a></li>
+    </ul>
+  </nav>
+</header>
+ 
+  <div class="row">
+    <div class="col-xs-12 col-sm-9 col-md-10 col-sm-offset-1 col-md-offset-1">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+</div> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carlito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--  <link rel="stylesheet" href=".src/"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <title>Porfolio Website</title>
+  </head>
+
+  <body class="main-container">
+    <!-- <nav class="main-nav">
+
+    <ul class="main-nav-list">
+      <li><a class="main-nav-link nav-cta" routerLink="/">Home</a></li>
+      <li><a class="main-nav-link nav-cta" routerLink="personal-details/">Personal details</a></li>
+      <li><a class="main-nav-link nav-cta" routerLink="/education">Education</a></li>
+    </ul>
+
+  </nav>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-9 col-md-10 col-sm-offset-1 col-md-offset-1">
+      <router-outlet></router-outlet>
+    </div>
+  </div> -->
+    <header class="header sticky">
+      <h1 class="logo">G. K.</h1>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link nav-cta" routerLink="/">Home</a></li>
+          <li>
+            <a class="main-nav-link nav-cta" routerLink="personal-details/"
+              >Personal details</a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link nav-cta" routerLink="/education"
+              >Education</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+
+    <!--     <section class="section-how ">
+      <div class="container grid grid--2-cols">
+        <div>Test 1</div>
+        <div>Test 1</div>
+        <div>Test 1</div>
+        <div>Test 1</div>
+      </div>
+    </section>
+
+    <section class="section-how grid grid--4-cols">
+      <div>Test 1</div>
+      <div>Test 1</div>
+      <div>Test 1</div>
+      <div>Test 1</div>
+    </section> -->
+
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-envelope-open"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="row">
+          <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+
+        <div class="row">
+          INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By:
+          Mahesh
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
