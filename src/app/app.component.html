@@ -17,15 +17,15 @@
         <nav>
           <ul>
             <li>
-              <a routerLink="/"><i class="las la-home"></i></a>
+              <a class="active" #link1 href="#section1" (click)="activateSection(link1)" routerLink="/"><i class="las la-home"></i></a>
               <span>Home</span>
             </li>
             <li>
-              <a routerLink="/personal-details"><i class="lar la-address-card"></i></a>
+              <a #link2 href="#section2" (click)="activateSection(link2)" routerLink="/personal-details"><i class="lar la-address-card"></i></a>
               <span>About me</span>
             </li>
             <li>
-              <a routerLink="/resume"><i class="las la-briefcase"></i></a>
+              <a #link3 href="#section3" (click)="activateSection(link3)" routerLink="/resume"><i class="las la-briefcase"></i></a>
               <span>My Resume</span>
             </li>
     
@@ -45,5 +45,6 @@
   </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
