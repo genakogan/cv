@@ -11,17 +11,24 @@ export class HomePageComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     const options = {
-      strings: ["Software engineer","Software Academic lecturer"],
+      strings: ['Software Engineer', 'Software Academic lecturer'],
       loop: true,
       typeSpeed: 70,
       backSpeed: 10,
-     
-    cursorChar: "", // Added option: Custom cursor character
-    shuffle: false, 
+      cursorChar: '',
+      shuffle: false,
+      smartBackspace: true,
+      showCursor: true,
+      startDelay: 1000,
+      backDelay: 1500,
+      fadeOut: false,
+      fadeOutClass: 'typed-fade-out',
+      fadeOutDelay: 500,
     };
 
     const typedElement =
-      this.elementRef.nativeElement.querySelector('.field h2');
+      this.elementRef.nativeElement.querySelector('h2');
+
     if (typedElement !== null) {
       new Typed(typedElement, options);
     }

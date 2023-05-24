@@ -1,5 +1,5 @@
 #home {
-  /* background-image: url("../images/bg-shape.png"); */
+ /*  background-image: url("../images/bg-shape.png"); */
   background-repeat: no-repeat;
   background-position: 40vw -24px;
 }
@@ -37,6 +37,7 @@
 }
 #home .info .socials ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -77,51 +78,23 @@
 }
 #home .image img {
   border-radius: 8px;
+  max-width: 100%;
   transition: all 0.3s;
 }
 #home .image img:hover {
   filter: saturate(200%) sepia(1);
 }
 
-#work {
-  background: #f00;
+/* #home {
+  background-image: unset;
 }
-
-#contact {
-  background: #000;
+#home .info {
+  padding-top: 80px;
 }
-
-@media (max-width: 768px) {
-  #sidebar {
-    background: black;
-    padding-right: 60px;
-    transform: translateX(-100%);
-    transition: all 0.3s;
-  }
-  #sidebar.open {
-    transform: translateX(0);
-  }
-  #sidebar .toggle-sidebar {
-    display: flex;
-  }
-  #sidebar .logo {
-    text-align: left;
-  }
-  #sidebar nav ul li a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-  }
-  #sidebar nav ul li a span {
-    display: block;
-    padding-left: 8px;
-  }
-  #sidebar nav ul li > span {
-    display: none;
-  }
-
-  main {
-    padding-left: 0;
-    padding-top: 50px;
-  }
+#home .info .socials {
+  margin-top: 70px;
 }
+#home .info .socials ul {
+  justify-content: space-between;
+}
+ */
