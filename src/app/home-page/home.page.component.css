@@ -1,100 +1,188 @@
-#home {
- /*  background-image: url("../images/bg-shape.png"); */
+body {
+  background: #0a192f;
+}
+
+.home {
+  /*  background-image: url("../images/bg-shape.png"); */
   background-repeat: no-repeat;
-  background-position: 40vw -24px;
+  background-position: right 35% bottom 45%;
 }
-#home .info {
-  padding-top: 281px;
+
+.home .info {
+  padding-top: 80px;
 }
-#home .info img.person-circle {
+
+.home .info h1 {
   margin-bottom: 24px;
 }
-#home .info h1 {
-  margin-bottom: 24px;
+
+.home .info h1 span {
+  color: #64ffda;
 }
-#home .info h1 span {
-  color: #B6B7BA;
-}
-#home .info .field {
+
+.home .info .field {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
+  height: 50px;
 }
-#home .info .field h2 {
-  color: #B6B7BA;
+
+.home .info .field h2 {
+  color: #b6b7ba;
   margin: 0;
 }
-#home .info .field span {
-  font-size: 21px;
-  margin-left: 2px;
-}
-#home .info p {
+
+.home .info p {
+  text-align: justify;
+  margin-top: 32px;
   max-width: 430px;
   margin-bottom: 74px;
+  font-size: 20px;
+  color: #8892b0;
+  background-color: #0a192f;
 }
-#home .info .socials {
-  margin-top: 191px;
+
+/* CV */
+/* .button-65  */
+.cv-button {
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #2f80ed;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  height: 40px;
+  letter-spacing: normal;
+  line-height: 0.7;
+  outline: none;
+  overflow: hidden;
+  padding: 14px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
 }
-#home .info .socials ul {
+
+.cv-button:hover {
+  background-color: #1366d6;
+  box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+.cv-button:hover:after {
+  opacity: .5;
+}
+
+.cv-button:active {
+  box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.cv-button:active:after {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .cv-button {
+    padding: 14px 22px;
+    width: 156px;
+  }
+}
+
+
+/*start socials*/
+
+.socials {
+  margin-top: 100px;
+}
+
+.socials ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
+  
 }
-#home .info .socials ul li {
+.socials ul li {
   margin-right: 8px;
+  
 }
-#home .info .socials ul li a {
-  display: flex;
+
+.socials ul li a {
+  display: block;
   align-items: center;
   text-decoration: none;
   padding: 9px 11px;
   transition: all 0.3s;
 }
-#home .info .socials ul li a:hover {
-  background: #1E1E20;
-  border-radius: 6px;
-}
-#home .info .socials ul li a:hover span,
-#home .info .socials ul li a:hover i {
-  color: #fff;
-}
-#home .info .socials ul li a i {
-  font-size: 18px;
-  margin-right: 8px;
-  color: #B6B7BA;
-  transition: all 0.3s;
-}
-#home .info .socials ul li a span {
-  color: #808185;
-  transition: all 0.3s;
-}
-#home .image {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-#home .image img {
-  border-radius: 8px;
-  max-width: 100%;
-  transition: all 0.3s;
-}
-#home .image img:hover {
-  filter: saturate(200%) sepia(1);
+
+.socials ul li a i, span {
+  color: #64ffda; /* Set the desired text color */
 }
 
-/* #home {
-  background-image: unset;
+.socials ul li a:hover {
+  background: #1e1e20;
+  border-radius: 6px;
+ }
+
+.socials ul li a:hover span,
+.socials ul li a:hover i {
+  color: #f76707;
 }
-#home .info {
-  padding-top: 80px;
+
+.socials ul li a i {
+  font-size: 18px;
+  margin-right: 8px;
+  color: #b6b7ba;
 }
-#home .info .socials {
-  margin-top: 70px;
+
+/*end socials*/
+
+/* Home section responsive for all devices*/
+
+/* TODO */
+
+@media (max-width: 767px) {
+   h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  main {
+    padding-left: 0;
+    padding-top: 50px;
+  }
+
+  .home {
+    background-image: unset;
+  }
+  .home .info {
+    padding-top: 80px;
+  }
+  .home .info .socials {
+    margin-top: 70px;
+  }
+  .home .info .socials ul {
+    justify-content: space-between;
+  }
 }
-#home .info .socials ul {
-  justify-content: space-between;
-}
- */

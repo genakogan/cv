@@ -4,7 +4,8 @@ import Typed from 'typed.js';
 @Component({
   selector: 'app-home-page',
   templateUrl: './home.page.component.html',
-  styleUrls: ['./home.page.component.css'],
+  styleUrls: ['./home.page.component.css',
+],
 })
 export class HomePageComponent implements AfterViewInit {
   constructor(private elementRef: ElementRef) {}
@@ -15,19 +16,19 @@ export class HomePageComponent implements AfterViewInit {
       loop: true,
       typeSpeed: 70,
       backSpeed: 10,
-      cursorChar: '',
-      shuffle: false,
+      cursorChar:'',
+      shuffle: true,
       smartBackspace: true,
       showCursor: true,
       startDelay: 1000,
       backDelay: 1500,
-      fadeOut: false,
-      fadeOutClass: 'typed-fade-out',
-      fadeOutDelay: 500,
+      fadeOut: true,
+      /* fadeOutClass: 'typed-fade-out',
+      fadeOutDelay: 500, */
     };
 
     const typedElement =
-      this.elementRef.nativeElement.querySelector('h2');
+      this.elementRef.nativeElement.querySelector('.field h2');
 
     if (typedElement !== null) {
       new Typed(typedElement, options);

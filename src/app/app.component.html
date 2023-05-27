@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
+
 <body>
-    <div id="sidebar">
-      <div class="toggle-sidebar">
-        <i class="las la-bars"></i>
+  <div id="sidebar">
+    <div class="toggle-sidebar">
+      <i class="las la-bars"></i>
     </div>
 
-        <div class="logo">
-           G. K. 
-        </div>
-        <nav>
-          <ul>
-            <li>
-              <a class="active" #link1 href="#section1" (click)="activateSection(link1)" routerLink="/"><i class="las la-home"></i></a>
-              <span>Home</span>
-            </li>
-            <li>
-              <a #link2 href="#section2" (click)="activateSection(link2)" routerLink="/personal-details"><i class="lar la-address-card"></i></a>
-              <span>About me</span>
-            </li>
-            <li>
-              <a #link3 href="#section3" (click)="activateSection(link3)" routerLink="/resume"><i class="las la-briefcase"></i></a>
-              <span>My Resume</span>
-            </li>
-    
-          </ul>
-        </nav>
-        <div class="toggle-mode">
-            <div class="outer">
-                <div class="inner"></div>
-            </div>
-        </div>
+    <div class="logo">
+      G. K.
     </div>
-    <div>
+    <nav>
+      <ul>
+        <li>
+          <a class="active" #link1 href="#section1" (click)="activateSection(link1)" routerLink="/"><i
+              class="las la-home"></i></a>
+          <span>Home</span>
+        </li>
+        <li>
+          <a #link2 href="#section2" (click)="activateSection(link2)" routerLink="/personal-details"><i
+              class="lar la-address-card"></i></a>
+          <span>About me</span>
+        </li>
+        <li>
+          <a #link3 href="#section3" (click)="activateSection(link3)" routerLink="/resume"><i
+              class="las la-briefcase"></i></a>
+          <span>My Resume</span>
+        </li>
+
+      </ul>
+    </nav>
+    <div class="toggle-mode">
+      <div class="outer">
+        <div class="inner"></div>
+      </div>
+    </div>
+  </div>
+  <div>
     <main>
       <router-outlet></router-outlet>
-      
     </main>
   </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    
-    
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

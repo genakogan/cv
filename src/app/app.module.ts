@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ResumeComponent } from './resume/resume.component';
 import { HomePageComponent } from './home-page/home.page.component';
-import { PersonalDetailsComponent } from './about-me/about.me.details.component';
+import { PersonalDetailsComponent } from './about-me/about.me.component';
 import { Routes, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ErrorPageComponent } from './error-page/error-page.component';
