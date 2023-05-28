@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,18 +7,30 @@ import { Component, ElementRef, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  activateSection(link: HTMLAnchorElement): void {
+  constructor(private router: Router) {}
+  setActiveLink(currentRoute: string): void {
     const navLinks = document.querySelectorAll('nav ul li a');
-    navLinks.forEach((item) => item.classList.remove('active'));
-    link.classList.add('active');
-    const sections = document.querySelectorAll('main > section');
-    sections.forEach((section) => section.classList.remove('active'));
-    const targetSection = document.querySelector(`main > section${link.getAttribute('href')}`);
-    if (targetSection) {
-      targetSection.classList.add('active');
-    }
+    navLinks.forEach(item => {
+      const link = item as HTMLAnchorElement;
+     
+      const route = link.getAttribute('routerLink');
+    
+      if (route === currentRoute) {
+        console.log("sda");
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
   }
+  
   ngOnInit(): void {
+    this.setActiveLink(this.router.url);
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.setActiveLink(event.url);
+      }
+    });
     const sidebarToggle = document.querySelector('#sidebar .toggle-sidebar');
     const sidebar = document.querySelector('#sidebar');
 

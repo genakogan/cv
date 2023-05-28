@@ -22,7 +22,7 @@
     <div class="logo">
       G. K.
     </div>
-    <nav>
+    <!-- <nav>
       <ul>
         <li>
           <a class="active" #link1 href="#section1" (click)="activateSection(link1)" routerLink="/"><i
@@ -41,7 +41,26 @@
         </li>
 
       </ul>
+    </nav> -->
+
+
+    <nav>
+      <ul>
+        <li>
+          <a class="active" routerLink="/" (click)="setActiveLink('/')"><i class="las la-home"></i></a>
+          <span>Home</span>
+        </li>
+        <li>
+          <a routerLink="/personal-details" (click)="setActiveLink('/personal-details')"><i class="lar la-address-card"></i></a>
+          <span>About me</span>
+        </li>
+        <li>
+          <a routerLink="/resume" (click)="setActiveLink('/resume')"><i class="las la-briefcase"></i></a>
+          <span>My Resume</span>
+        </li>
+      </ul>
     </nav>
+    
     <div class="toggle-mode">
       <div class="outer">
         <div class="inner"></div>
