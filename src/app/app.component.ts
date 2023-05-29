@@ -25,7 +25,6 @@ export class AppComponent implements OnInit {
   }
   
   ngOnInit(): void {
-    this.setActiveLink(this.router.url);
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         this.setActiveLink(event.url);
