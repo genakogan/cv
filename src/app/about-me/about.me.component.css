@@ -60,7 +60,7 @@ body {
 #about_me header.custom h2 {
   display: inline-block;
   padding: 0 24px;
-  background: #151516;
+ 
 }
 #about_me .rate {
   display: flex;
@@ -102,6 +102,17 @@ body {
 #about_me .languages-skills .languages-key-skills {
   padding-right: 160px;
 }
+/************************************************************/
+#about_me .languages-skills .languages-key-skills .item p{
+  text-align: justify;
+  margin-top: 32px;
+  max-width: 430px;
+  margin-bottom: 74px;
+  font-size: 20px;
+  color: #8892b0;
+  background-color: #0a192f;
+}
+
 #about_me .languages-skills .languages-key-skills .languages .items {
   margin-bottom: 43px;
 }
@@ -109,10 +120,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 51%;
-  height: 50%
+  width: 100%;
+  height: 50%;
 }
-
 
 #about_me
   .languages-skills
@@ -129,7 +139,7 @@ body {
   .items
   .item
   .info
-  h3 {
+  h5 {
   margin-bottom: 4px;
 }
 #about_me
@@ -159,24 +169,33 @@ body {
   margin-left: -20px;
   margin-right: -20px;
 }
+
 #about_me .languages-skills .web-skills .items .item {
   position: relative;
   text-align: center;
-  padding: 32px 8px;
-  background: #1e1e20;
+  padding: 15px 8px;
+  background: #1e201f;
   margin-bottom: 16px;
   border-radius: 8px;
   z-index: 1;
   overflow: hidden;
+  
+  /* Additional styles */
+  color: #fff; /* Text color */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 2); /* Box shadow */
+  transition: background-color 0.3s ease; /* Transition effect */
+}
+
+#about_me .languages-skills .web-skills .items .item:hover {
+  background-color: #2d322f; /* Background color on hover */
 }
 
 
-#about_me .languages-skills .web-skills .items .item .skillimg{
+
+#about_me .languages-skills .web-skills .items .item .skillimg {
   width: 51px;
   height: 51px;
 }
-
-
 
 #about_me .languages-skills .web-skills .items .item:hover:before,
 #about_me .languages-skills .web-skills .items .item:hover:after {
@@ -211,7 +230,7 @@ body {
 #about_me .languages-skills .web-skills .items .item img {
   margin-bottom: 21px;
 }
-#about_me .languages-skills .web-skills .items .item h3 {
+#about_me .languages-skills .web-skills .items .item h5 {
   margin-bottom: 8px;
 }
 #about_me .languages-skills .web-skills .items .item .year {
@@ -226,20 +245,19 @@ body {
   display: grid;
   grid-auto-columns: 90%;
   padding: 2em 1em;
-  
 }
 
 #about_me .certificates .items .item img {
   width: 100%;
   transition: transform 0.3s;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-  border-radius: 5px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
   margin-bottom: 1rem;
 }
 
 #about_me .certificates .items .item img:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 /* End certificates */
 
