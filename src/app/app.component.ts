@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
       const route = link.getAttribute('routerLink');
     
       if (route === currentRoute) {
-        console.log("sda");
+
         link.classList.add('active');
       } else {
         link.classList.remove('active');

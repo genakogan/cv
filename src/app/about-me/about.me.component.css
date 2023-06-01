@@ -18,10 +18,20 @@ body {
   color: #b6b7ba;
   margin-bottom: 16px;
 }
+
+#about_me .info .field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  height: 50px;
+}
+
 #about_me .hero .info p {
   max-width: 560px;
   color: #b6b7ba;
 }
+
+
 #about_me .hero .info .items {
   margin-top: 30px;
   margin-bottom: 48px;
