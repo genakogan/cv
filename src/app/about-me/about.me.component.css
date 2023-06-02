@@ -2,8 +2,8 @@ body {
   background: #0a192f;
 }
 #about_me .hero .image img {
-  padding-top: 80px;
-  border-radius: 8px;
+  padding-top: 200px;
+  border-radius: 9px;
   max-width: 100%;
   transition: all 0.3s;
 }
@@ -27,10 +27,11 @@ body {
 }
 
 #about_me .hero .info p {
-  max-width: 560px;
+  max-width: 800px;
   color: #8892b0;
+  text-align: justify;
+  font-size: 16px;
 }
-
 
 #about_me .hero .info .items {
   margin-top: 30px;
@@ -41,9 +42,12 @@ body {
   margin-bottom: 16px;
 }
 #about_me .hero .info .items .item .value {
-  color: #8892b0;
+  color: #64ffda;
   margin-left: 4px;
 }
+
+/* Start buttons*/
+
 #about_me .hero .info .buttons {
   display: inline-flex;
   flex-wrap: wrap;
@@ -56,6 +60,73 @@ body {
   text-align: center;
   margin-bottom: 42px;
 }
+
+/* .button-65  */
+#about_me .hero .info .buttons .cv-button {
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #2f80ed;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  height: 40px;
+  letter-spacing: normal;
+  line-height: 0.7;
+  outline: none;
+  overflow: hidden;
+  padding: 14px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+#about_me .hero .info .buttons .cv-button:hover {
+  background-color: #1366d6;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 5px 30px, rgba(0, 0, 0, 0.05) 0 1px 4px;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: 0.35s;
+}
+
+#about_me .hero .info .buttons .cv-button:hover:after {
+  opacity: 0.5;
+}
+
+#about_me .hero .info .buttons .cv-button:active {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 3px 6px 0, rgba(0, 0, 0, 0.1) 0 0 10px 0,
+    rgba(0, 0, 0, 0.1) 0 1px 4px -1px;
+  transform: translateY(2px);
+  transition-duration: 0.35s;
+}
+
+#about_me .hero .info .buttons .cv-button:active:after {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  #about_me .hero .buttons .info .cv-button {
+    padding: 14px 22px;
+    width: 156px;
+  }
+}
+
+/* End buttons*/
+
 #about_me header.custom:before {
   content: "";
   position: absolute;
@@ -70,7 +141,6 @@ body {
 #about_me header.custom h2 {
   display: inline-block;
   padding: 0 24px;
- 
 }
 #about_me .rate {
   display: flex;
@@ -99,7 +169,7 @@ body {
   width: 15px;
   height: 15px;
   border-radius: 4px;
-  background: #1e1e20;
+  background: #661294;
   transform: rotate(50deg);
 }
 #about_me .rate span.fill:before,
@@ -113,21 +183,19 @@ body {
   padding-right: 160px;
 }
 /************************************************************/
-#about_me .languages-skills .languages-key-skills .item p{
+#about_me .languages-skills .languages-key-skills .item p {
   text-align: justify;
   margin-top: 32px;
   max-width: 430px;
   margin-bottom: 74px;
   font-size: 20px;
   color: #8892b0;
-  
 }
 
-#about_me .languages-skills .languages-key-skills .item p a{
+#about_me .languages-skills .languages-key-skills .item p a {
   color: #64ffda;
   text-decoration: none;
 }
-
 
 #about_me .languages-skills .languages-key-skills .languages .items {
   margin-bottom: 43px;
@@ -167,14 +235,11 @@ body {
   .info
   .level {
   color: #8892b0;
-  
 }
 #about_me .languages-skills .languages-key-skills .key-skills .items .item {
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
-  
 }
 #about_me
   .languages-skills
@@ -199,9 +264,9 @@ body {
   z-index: 1;
   overflow: hidden;
   color: #8892b0;
-  
+
   /* Additional styles */
-  
+
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 2); /* Box shadow */
   transition: background-color 0.3s ease; /* Transition effect */
 }
@@ -209,8 +274,6 @@ body {
 #about_me .languages-skills .web-skills .items .item:hover {
   background-color: #2d322f; /* Background color on hover */
 }
-
-
 
 #about_me .languages-skills .web-skills .items .item .skillimg {
   width: 51px;
@@ -263,8 +326,8 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-auto-columns: 90%;
-  padding: 2em 1em;
+  /*  grid-auto-columns: 90%; */
+  /* padding: 2em 1em; */
 }
 
 #about_me .certificates .items .item img {
@@ -307,6 +370,39 @@ body {
     margin-bottom: 40px;
   }
 }
+
+/* SOCIALS*/
+
+#about_me .socials {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: auto;
+  right: 30px;
+  margin: 20px auto;
+  padding: 10px;
+  line-height: 50px;
+}
+
+#about_me .socials ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#about_me .socials ul i {
+  color: #64ffda;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
 @media (max-width: 767px) {
   #sidebar {
     background: black;

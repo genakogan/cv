@@ -9,7 +9,7 @@ import Typed from "typed.js";
     styleUrls: ['./about.me.component.css']
 
 })
-export class PersonalDetailsComponent{
+export class AboutMeComponent{
   constructor(private elementRef: ElementRef) {}
 
    ngAfterViewInit(): void {
