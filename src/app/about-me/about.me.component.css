@@ -7,6 +7,9 @@ body {
   max-width: 100%;
   transition: all 0.3s;
 }
+
+
+
 #about_me .hero .image img:hover {
   filter: saturate(200%) sepia(1);
 }
@@ -30,7 +33,7 @@ body {
   max-width: 800px;
   color: #8892b0;
   text-align: justify;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 #about_me .hero .info .items {
@@ -40,10 +43,12 @@ body {
 #about_me .hero .info .items .item {
   display: flex;
   margin-bottom: 16px;
+  font-size: 18px;
 }
 #about_me .hero .info .items .item .value {
   color: #64ffda;
-  margin-left: 4px;
+  margin-left: 10px;
+  font-size: 16px;
 }
 
 /* Start buttons*/
@@ -51,14 +56,21 @@ body {
 #about_me .hero .info .buttons {
   display: inline-flex;
   flex-wrap: wrap;
+  justify-content: center;
+ 
+  
 }
+
+
 #about_me .hero .info .buttons a:first-child {
   margin-right: 24px;
+  
 }
 #about_me header.custom {
   position: relative;
   text-align: center;
   margin-bottom: 42px;
+  
 }
 
 /* .button-65  */
@@ -93,6 +105,7 @@ body {
   touch-action: manipulation;
   vertical-align: top;
   white-space: nowrap;
+  
 }
 
 #about_me .hero .info .buttons .cv-button:hover {
@@ -188,7 +201,7 @@ body {
   margin-top: 32px;
   max-width: 430px;
   margin-bottom: 74px;
-  font-size: 20px;
+  font-size: 18px;
   color: #8892b0;
 }
 
@@ -379,7 +392,7 @@ body {
   bottom: 0px;
   left: auto;
   right: 30px;
-  margin: 20px auto;
+  margin: 0px auto;
   padding: 10px;
   line-height: 50px;
 }
@@ -397,11 +410,14 @@ body {
   font-size: 20px;
 }
 
-
-
-
-
-
+#about_me .socials ul::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: #64ffda;
+}
 
 @media (max-width: 767px) {
   #sidebar {
